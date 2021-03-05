@@ -1,14 +1,19 @@
 Integration of Consistence library with Doctrine ORM
 ====================================================
 
-This library provides integration of [Consistence](https://github.com/consistence/consistence) value objects for [Doctrine ORM](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/) so that you can use them in your entities.
+**This package is a fork of [`consistence/consistence-doctrine`](https://github.com/consistence/consistence-doctrine) maintained by community to support new PHP versions.**
 
-For now, the only integration which is needed is for [Enums](https://github.com/consistence/consistence/blob/master/docs/Enum/enums.md), see the examples below.
+---
+
+
+This library provides integration of [Consistence](https://github.com/consistence-community/consistence) value objects for [Doctrine ORM](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/) so that you can use them in your entities.
+
+For now, the only integration which is needed is for [Enums](https://github.com/consistence-community/consistence/blob/master/docs/Enum/enums.md), see the examples below.
 
 Usage
 -----
 
-[Enums](https://github.com/consistence/consistence/blob/master/docs/Enum/enums.md) represent predefined set of values and of course, you will want to store these values in your database as well. Since [`Enums`](https://github.com/consistence/consistence/blob/master/src/Enum/Enum.php) are objects and you only want to store the represented value, there has to be some mapping.
+[Enums](https://github.com/consistence-community/consistence/blob/master/docs/Enum/enums.md) represent predefined set of values and of course, you will want to store these values in your database as well. Since [`Enums`](https://github.com/consistence-community/consistence/blob/master/src/Enum/Enum.php) are objects and you only want to store the represented value, there has to be some mapping.
 
 You can see it in this example where you want to store sex for your `User`s:
 
@@ -121,17 +126,17 @@ class Consistence\Doctrine\Example\User\Sex#5740 (1) {
 */
 ```
 
-This means that the objects API is symmetrical (you get the same type as you set) and you can start benefiting from [Enums](https://github.com/consistence/consistence/blob/master/docs/Enum/enums.md) advantages such as being sure, that what you get is already a valid value and having the possibility to define methods on top of the represented values.
+This means that the objects API is symmetrical (you get the same type as you set) and you can start benefiting from [Enums](https://github.com/consistence-community/consistence/blob/master/docs/Enum/enums.md) advantages such as being sure, that what you get is already a valid value and having the possibility to define methods on top of the represented values.
 
 Installation
 ------------
 
-> If you are using Symfony, you can use [`consistence/consistence-doctrine-symfony`](https://github.com/consistence/consistence-doctrine-symfony), which will take care of the integration.
+> If you are using Symfony, you can use [`consistence-community/consistence-doctrine-symfony`](https://github.com/consistence-community/consistence-doctrine-symfony), which will take care of the integration.
 
-1) Install package [`consistence/consistence-doctrine`](https://packagist.org/packages/consistence/consistence-doctrine) with [Composer](https://getcomposer.org/):
+1) Install package [`consistence-community/consistence-doctrine`](https://packagist.org/packages/consistence-community/consistence-doctrine) with [Composer](https://getcomposer.org/):
 
 ```bash
-composer require consistence/consistence-doctrine
+composer require consistence-community/consistence-doctrine
 ```
 
 2) Register [Doctrine DBAL types](http://doctrine-orm.readthedocs.org/en/latest/cookbook/custom-mapping-types.html) and [annotations](http://docs.doctrine-project.org/projects/doctrine-common/en/latest/reference/annotations.html#registering-annotations):
