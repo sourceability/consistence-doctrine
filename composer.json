@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"php": "~7.4 || ~8.0",
+		"php": "~8.0",
 		"consistence-community/consistence": "~2.1",
 		"doctrine/annotations": "~1.7",
 		"doctrine/orm": "^2.6.3"
