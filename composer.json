@@ -16,11 +16,11 @@
 		"doctrine/orm": "^2.6.3"
 	},
 	"require-dev": {
-		"consistence-community/coding-standard": "3.11.0",
+		"consistence-community/coding-standard": "3.11.1",
 		"doctrine/persistence": "^1.3.5 || ^2.0",
-		"php-parallel-lint/php-parallel-lint": "1.2.0",
-		"phing/phing": "2.16.4",
-		"phpunit/phpunit": "9.5.2"
+		"php-parallel-lint/php-parallel-lint": "1.3.1",
+		"phing/phing": "2.17.0",
+		"phpunit/phpunit": "9.5.10"
 	},
 	"replace": {
 		"consistence/consistence-doctrine": "2.*"
