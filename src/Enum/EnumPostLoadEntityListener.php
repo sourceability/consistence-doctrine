@@ -100,7 +100,7 @@ class EnumPostLoadEntityListener
 		$enum = $enumClassName::get(($enumValue instanceof Enum) ? $enumValue->getValue() : $enumValue);
 		$metadata->setFieldValue($entity, $fieldName, $enum);
 		$entityManager->getUnitOfWork()->setOriginalEntityProperty(
-			spl_object_hash($entity),
+			spl_object_id($entity),
 			$fieldName,
 			$enum
 		);
