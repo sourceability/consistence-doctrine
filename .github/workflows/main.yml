@@ -60,6 +60,7 @@ jobs:
             - name: Upload coverage results to Coveralls
               env:
                   COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              # see https://github.com/php-coveralls/php-coveralls/issues/327#issuecomment-982570487
               run: |
-                  composer global require php-coveralls/php-coveralls --no-progress --prefer-dist --optimize-autoloader
+                  composer global require symfony/console:5.4 php-coveralls/php-coveralls --no-progress --prefer-dist --optimize-autoloader
                   php-coveralls --verbose --config build/coveralls.yml
