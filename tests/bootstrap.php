@@ -6,7 +6,6 @@ use Consistence\Doctrine\Enum\Type\BooleanEnumType;
 use Consistence\Doctrine\Enum\Type\FloatEnumType;
 use Consistence\Doctrine\Enum\Type\IntegerEnumType;
 use Consistence\Doctrine\Enum\Type\StringEnumType;
-use Doctrine\Common\Annotations\AnnotationRegistry;
 use Doctrine\DBAL\Types\Type as DoctrineType;
 
 error_reporting(E_ALL);
