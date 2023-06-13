@@ -11,9 +11,7 @@ use Doctrine\DBAL\Types\Type as DoctrineType;
 
 error_reporting(E_ALL);
 
-$loader = require __DIR__ . '/../vendor/autoload.php';
-
-AnnotationRegistry::registerLoader([$loader, 'loadClass']);
+require __DIR__ . '/../vendor/autoload.php';
 
 DoctrineType::addType(FloatEnumType::NAME, FloatEnumType::class);
 DoctrineType::addType(IntegerEnumType::NAME, IntegerEnumType::class);
